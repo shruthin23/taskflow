@@ -18,8 +18,7 @@ class TaskFlowApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TaskFlow',
-      themeMode: ThemeMode.system,
-
+      themeMode: ThemeMode.light, // Force light mode
       /// 🌞 LIGHT THEME
       theme: ThemeData(
         useMaterial3: true,
@@ -38,26 +37,6 @@ class TaskFlowApp extends StatelessWidget {
           onSurface: Colors.black,
         ),
         scaffoldBackgroundColor: const Color(0xFFF6F2FB),
-      ),
-
-      /// 🌙 DARK PURPLE THEME
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF120B16),
-        colorScheme: const ColorScheme(
-          brightness: Brightness.dark,
-          primary: Color(0xFFCBA3E6),
-          onPrimary: Colors.black,
-          secondary: Color(0xFF9C6BCF),
-          onSecondary: Colors.white,
-          error: Colors.red,
-          onError: Colors.white,
-          background: Color(0xFF120B16),
-          onBackground: Colors.white,
-          surface: Color(0xFF1E1523),
-          onSurface: Colors.white,
-        ),
       ),
 
       /// ROUTES
